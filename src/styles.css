@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+.header {
+  background: #444;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+}
+
+.title {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  margin-left: 5%;
+  color: #fff;
+}
+
+.nav-menu {
+  width: max-content;
+  height: 100%;
+  float: right;
+  text-align: center;
+}
+
+.nav-menu ul {
+  width: max-content;
+  margin-right: 150px;
+}
+
+.nav-menu ul li {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.nav-menu ul li a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s all linear;
+}
+
+.nav-menu ul li a:hover {
+  color: #ccc;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+.coins-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.coin-container {
+  width: 50%;
+  height: 100%;
+}
+
+.footer {
+  background: #444;
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  line-height: 70px;
+  text-align: center;
+  color: white;
+}

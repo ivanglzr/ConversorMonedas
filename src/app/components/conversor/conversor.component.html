@@ -1,0 +1,57 @@
+<main>
+  <div class="coins-container">
+    <form #coinForm="ngForm" (ngSubmit)="onSubmit()">
+      <label for="coin">Moneda</label>
+      <input
+        list="coins"
+        id="coin"
+        name="coin"
+        #coinContainer
+        ngModel
+        required
+        type="text"
+        [(ngModel)]="coin"
+      />
+
+      <label for="value">Valor</label>
+      <input
+        type="text"
+        id="value"
+        name="value"
+        #coinValue
+        ngModel
+        required
+        [(ngModel)]="value"
+      />
+
+      <label for="convertedCoin">Moneda Convertida</label>
+      <input
+        list="coins"
+        id="convertedCoin"
+        name="convertedCoin"
+        #convertedCoinContainer
+        ngModel
+        required
+        type="text"
+        [(ngModel)]="convertedCoin"
+      />
+
+      <input type="submit" value="Enviar" />
+
+      <datalist id="coins">
+        <option value="EUR"></option>
+        <option value="USD"></option>
+        <option value="JPY"></option>
+        <option value="GBP"></option>
+        <option value="AUD"></option>
+        <option value="CAD"></option>
+        <option value="CHF"></option>
+        <option value="CNH"></option>
+        <option value="HKD"></option>
+        <option value="NZD"></option>
+      </datalist>
+    </form>
+
+    <h2>{{ finalValue | number : "1.2-2" }}</h2>
+  </div>
+</main>
